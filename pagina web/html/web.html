@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecno PVC - Carpintería de Ventanas</title>
-    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/pagina web/css/estilos.css">
 </head>
 <body>
     <!-- Encabezado estilizado y agrandado -->
@@ -16,7 +16,8 @@
             <ul class="menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
-                <li><a href="#sobre-empresa">Sobre la Empresa</a></li>
+                <li><a href="#sobre-empresa">Sobre la Empresa</a></li>              <!-- Agregar este ítem a la lista del menú en el header -->
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -70,6 +71,47 @@
         <div class="producto-item">
             <h3>Ventanas Fijas</h3>
             <p>Perfectas para aprovechar al máximo la luz natural, las ventanas fijas proporcionan vistas amplias y no requieren mantenimiento de apertura.</p>
+        </div>
+    </section>
+
+    <!-- Agregar esta sección antes del footer en web.html -->
+    <section id="contacto" class="contacto">
+        <h2>Contacta con Nosotros</h2>
+        <div class="formulario-container">
+            <form action="#" method="POST" class="formulario-contacto">
+                <div class="form-grupo">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-grupo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-grupo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                
+                <div class="form-grupo">
+                    <label for="tipo-ventana">Tipo de ventana:</label>
+                    <select id="tipo-ventana" name="tipo-ventana">
+                        <option value="">Seleccione una opción</option>
+                        <option value="abatible">Ventana Abatible</option>
+                        <option value="corredera">Ventana Corredera</option>
+                        <option value="oscilo-batiente">Ventana Oscilo-batiente</option>
+                        <option value="fija">Ventana Fija</option>
+                    </select>
+                </div>
+                
+                <div class="form-grupo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
         </div>
     </section>
 
